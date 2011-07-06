@@ -7,14 +7,6 @@ public
     parse_line(line) if line != nil
   end
 
-  def int_or_neg1(x)
-    Integer(x) rescue -1
-  end
-
-  def int_or_raw(x)
-    Integer(x) rescue x
-  end
-
   def parse_line(line)
     return false if line[0] == "@"
     
@@ -48,6 +40,16 @@ public
     end
 
     return true;
+  end
+
+private
+
+  def int_or_neg1(x)
+    Integer(x) rescue -1
+  end
+
+  def int_or_raw(x)
+    Integer(x) rescue x
   end
 
 end
