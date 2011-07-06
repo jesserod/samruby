@@ -1,18 +1,21 @@
-Installation
+Overview
 ============
+
+This gem provides a lightweight class, `Sam`, which can be used to parse SAM files by giving it one SAM line at a time.
+
+To install, just install the `sam` gem:
 
     sudo gem install sam
 
-Description
-===========
-
-This gem provides the `Sam` class which has the following member variables:
+Details
+==========
+The `Sam` class has the following member variables:
 
 * `name`: a string
 * `flag`: an integer or a string if `samtools view -X` was used
 * `chrom`: a string
 * `pos`: an integer (-1 if unmapped)
-* `mapq`: an integer
+* `mapq`: an integer (-1 if unspecified)
 * `cigar`: a string
 * `mchrom`: a string
 * `mpos`: an integer (-1 if unmapped)
