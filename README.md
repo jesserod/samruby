@@ -29,7 +29,7 @@ You can also use the `parse_line` method to reuse the same Sam object
 
     for line in gets
       if s.parse_line(line) # Returns false if line starts with @ (a header line)
-        puts s.tags["XT:U"]
+        puts s.tags["XT:A"]
       end
     end
 
