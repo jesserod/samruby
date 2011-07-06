@@ -16,7 +16,7 @@ public
     # colnames = %w(1:name 2:flag 3:chr 4:pos 5:mapq 6:cigar 7:mchr 8:mpos 9:insrt 10:seq 11:qual)
 
     @name = f[0]
-    @flag = f[1]
+    @flag = int_or_raw(f[1])
     @chrom = f[2]
     @pos = int_or_neg1(f[3])
     @mapq = int_or_neg1(f[4])

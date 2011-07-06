@@ -9,7 +9,7 @@ Description
 This gem provides the `Sam` class which has the following member variables:
 
 * `name`: a string
-* `flag`: a string 
+* `flag`: an integer or a string if `samtools view -X` was used
 * `chrom`: a string
 * `pos`: an integer (-1 if unmapped)
 * `mapq`: an integer
