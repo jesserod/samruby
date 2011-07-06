@@ -7,5 +7,5 @@ Gem::Specification.new do |s|
   s.authors     = ["Jesse Rodriguez"]
   s.email       = 'jesserod@cs.stanford.edu'
   s.files       = ["lib/sam.rb"]
-  s.homepage    = 'http://rubygems.org/gems/sam'
+  s.homepage    = 'https://github.com/jesserod/samruby'
 end

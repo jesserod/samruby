@@ -24,17 +24,17 @@ This gem provides the `Sam` class which has the following member variables:
 Usage
 =====
 
-To print the XT:U tag of each entry, you might do this:
+To print the XT:A tag of each entry, you might do this:
     require 'sam'
 
     for line in gets
       next if line[0] == "@" # Skip header if it exists
-      puts Sam.new(line).tags["XT:U"]
+      puts Sam.new(line).tags["XT:A"]
     end
 
 You can do something similar with a one-liner at the command line
 
-    cat test.sam | ruby -r sam -ne 'next if $_[0] == "@"; puts Sam.new($_).tags["XT:U"]' 
+    cat test.sam | ruby -r sam -ne 'next if $_[0] == "@"; puts Sam.new($_).tags["XT:A"]' 
 
 You can also use the `parse_line` method to reuse the same Sam object
 
