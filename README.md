@@ -7,23 +7,6 @@ To install, just install the `sam` gem:
 
     sudo gem install sam
 
-Details
-==========
-The `Sam` class has the following member variables:
-
-* `name`: a string
-* `flag`: an integer or a string if `samtools view -X` was used
-* `chrom`: a string
-* `pos`: an integer (-1 if unmapped)
-* `mapq`: an integer (-1 if unspecified)
-* `cigar`: a string
-* `mchrom`: a string
-* `mpos`: an integer (-1 if unmapped)
-* `insert`: an integer (or the raw string if not set)
-* `seq`: a string
-* `qual`: a string
-* `tags`: a hash mapping tag names to tag values
-
 Usage
 =====
 
@@ -49,3 +32,21 @@ You can also use the `parse_line` method to reuse the same Sam object
         puts s.tags["XT:U"]
       end
     end
+
+
+Details
+=======
+The `Sam` class has the following member variables:
+
+* `name`: a string
+* `flag`: an integer or a string if `samtools view -X` was used
+* `chrom`: a string
+* `pos`: an integer (-1 if unmapped)
+* `mapq`: an integer (-1 if unspecified)
+* `cigar`: a string
+* `mchrom`: a string
+* `mpos`: an integer (-1 if unmapped)
+* `insert`: an integer (or the raw string if not set)
+* `seq`: a string
+* `qual`: a string
+* `tags`: a hash mapping tag names to tag values
